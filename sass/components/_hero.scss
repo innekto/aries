@@ -1,0 +1,46 @@
+.hero {
+    width: 428px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url(/images/mobile/hero-back-mobile.jpg);
+
+    &__header {}
+
+    &__logo {}
+
+    &__title {}
+
+    &__discription {}
+
+    &__button {}
+
+    &__list {
+        display: flex;
+        margin-left: -37px;
+        margin-right: -37px;
+    }
+
+    &__item {}
+
+    &__image {}
+
+    &__price {}
+}
+
+.container {}
+
+.burger {}
+
+.price {
+
+    &__item {}
+
+    &__parag-one {}
+
+    &__parag-two {}
+}

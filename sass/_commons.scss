@@ -1,0 +1,54 @@
+body {
+    font-family: "Poppins", "JetBrains Mono", "Roboto", "Bevan" sans-serif;
+    background-color: bisque;
+    color: var(--main-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    margin: auto;
+    outline: 1px solid tomato;
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    //     @media screen and (max-width: 767px) {
+    //         position: relative;
+    //         // overflow: hidden;
+    //     }
+
+    @media screen and (min-width: 320px) {
+        max-width: 428px;
+        padding-left: 37px;
+        padding-right: 37px;
+    }
+
+    //     @media screen and (min-width: 768px) {
+    //         max-width: 768px;
+    //     }
+
+    //     @media screen and (min-width: 1200px) {
+    //         max-width: 1200px;
+    //     }
+}
