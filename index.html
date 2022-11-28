@@ -68,7 +68,7 @@
                   ./images/mobile/efel-mobile_2x.jpg 2x
                 "
                 src="./images/mobile/efel-mobile.jpg"
-                alt=""
+                alt="efel tower"
               />
             </picture>
           </li>
@@ -88,7 +88,7 @@
                   ./images/mobile/bridge-mobile_2x.jpg 2x
                 "
                 src="./images/mobile/bridge-mobile.jpg"
-                alt=""
+                alt="bridge"
               />
             </picture>
           </li>
@@ -111,28 +111,30 @@
     </section>
 
     <section class="partners">
-      <ul class="partners__list">
-        <li class="partners__item">
-          <svg class="partners__logo">
-            <use href="./images/svg/symbol-defs.svg#"></use>
-          </svg>
-        </li>
-        <li class="partners__item">
-          <svg class="partners__logo">
-            <use href="./images/svg/symbol-defs.svg#"></use>
-          </svg>
-        </li>
-        <li class="partners__item">
-          <svg class="partners__logo">
-            <use href="./images/svg/symbol-defs.svg#"></use>
-          </svg>
-        </li>
-        <li class="partners__item">
-          <svg class="partners__logo">
-            <use href="./images/svg/symbol-defs.svg#"></use>
-          </svg>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="partners__list">
+          <li class="partners__item">
+            <picture class="partners__logo">
+              <source
+                srcset="
+                  ./images/mobile/southwest-mobile.png    1x,
+                  ./images/mobile/southwest-mobile_2x.png 2x
+                "
+              />
+              <!-- <source>
+            <source> -->
+              <img
+                srcset="
+                  ./images/mobile/southwest-mobile.png    1x,
+                  ./images/mobile/southwest-mobile_2x.png 2x
+                "
+                src="./images/mobile/southwest-mobile.png"
+                alt="logo"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
     </section>
   </body>
 </html>
