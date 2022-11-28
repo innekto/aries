@@ -1,23 +1,111 @@
 .hero {
+    position: relative;
     width: 428px;
     margin: auto;
+    padding: 146px 0 0 0;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.6)),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)),
         url(/images/mobile/hero-back-mobile.jpg);
 
-    &__header {}
+    &__header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-left: 37px;
+        padding-right: 37px;
+        background-color: rgba(0, 0, 0, 0.26);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-    &__logo {}
+    &__link {
+        padding: 17px 0;
+    }
 
-    &__title {}
+    // &__logo {}
 
-    &__discription {}
+    &__title {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 1.19;
+        text-align: center;
+        margin-bottom: 35px;
 
-    &__button {}
+    }
+
+    &__title--dark-up {
+        font-size: 48px;
+        color: #D1D1D1;
+    }
+
+    &__title--dark {
+        font-weight: 500;
+        font-size: 26px;
+        color: #D1D1D1;
+    }
+
+    &__discription {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.27;
+        text-align: center;
+        margin-bottom: 41px;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__line {
+        display: block;
+        // position: absolute;
+        left: 0;
+        width: 152px;
+        height: 1px;
+        background-color: var(--main-text-color);
+        margin-left: -37px;
+        transition: background-color 250ms var(--cubik);
+
+
+
+    }
+
+    &__button {
+        order: 1;
+        display: block;
+        cursor: pointer;
+        border: 1px solid #FFFFFF;
+        color: var(--main-text-color);
+        background-color: transparent;
+        // margin: auto;
+
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.27;
+        padding: 9px 30px;
+        transform: border;
+        transition: color 250ms var(--cubik), border 250ms var(--cubik);
+
+        &:hover {
+            color: var(--hover-color);
+            border: 1px solid var(--hover-color);
+        }
+
+
+
+
+    }
 
     &__list {
         display: flex;
@@ -32,9 +120,28 @@
     &__price {}
 }
 
-.container {}
+.hero__wrap:hover .hero__line {
+    background-color: var(--hover-color);
+}
 
-.burger {}
+.burger {
+    cursor: pointer;
+    color: var(--main-text-color);
+    background-color: transparent;
+    padding: 0;
+    border: none;
+
+    transition: color 250ms var(--cubik);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
 
 .price {
 

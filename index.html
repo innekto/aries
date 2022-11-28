@@ -23,23 +23,33 @@
     <section class="hero">
       <div class="container">
         <div class="hero__header">
-          <img
-            srcset="/images/mobile/logo.jpg 1x, /images/mobile/logo_2x.jpg 2x"
-            src="./images/mobile/logo.png"
-            alt=""
-            class="hero__logo"
-          />
-          <svg class="burger" width="34" height="34">
-            <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
-          </svg>
+          <a href="" class="hero__link">
+            <img
+              srcset="/images/mobile/logo.png 1x, /images/mobile/logo_2x.png 2x"
+              src="./images/mobile/logo.png"
+              alt=""
+              class="hero__logo"
+            />
+          </a>
+          <button class="burger" type="button">
+            <svg class="burger__icon" width="34" height="34">
+              <use href="./images/svg/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
-        <h1 class="hero__title">Discover New Experiences</h1>
+        <h1 class="hero__title">
+          <span class="hero__title--dark-up">Discover</span>
+          <span class="hero__title--dark">New</span> Experiences
+        </h1>
         <p class="hero__discription">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet sem
           suspendisse tristique habitant consectetur cursus at. Leo in eget
           convallis nunc rhoncus nulla m
         </p>
-        <button class="hero__button" type="button">Explore</button>
+        <div class="hero__wrap">
+          <button class="hero__button" type="button">Explore</button>
+          <span class="hero__line"></span>
+        </div>
 
         <ul class="hero__list">
           <li class="hero__item">
