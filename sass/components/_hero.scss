@@ -63,7 +63,9 @@
     &__wrap {
         display: flex;
         align-items: center;
-
+        width: fit-content;
+        margin-left: -37px;
+        margin-bottom: 66px;
     }
 
     &__line {
@@ -73,12 +75,16 @@
         width: 152px;
         height: 1px;
         background-color: var(--main-text-color);
-        margin-left: -37px;
+        // margin-left: -37px;
         transition: background-color 250ms var(--cubik);
 
-
-
+        .hero__wrap:hover &,
+        .hero__wrap:focus & {
+            background-color: var(--hover-color);
+        }
     }
+
+
 
     &__button {
         order: 1;
@@ -97,12 +103,12 @@
         transform: border;
         transition: color 250ms var(--cubik), border 250ms var(--cubik);
 
-        &:hover {
+
+        .hero__wrap:hover &,
+        .hero__wrap:focus & {
             color: var(--hover-color);
             border: 1px solid var(--hover-color);
         }
-
-
 
 
     }
@@ -113,16 +119,14 @@
         margin-right: -37px;
     }
 
-    &__item {}
+    // &__item {}
 
-    &__image {}
+    // &__image {}
 
-    &__price {}
+    // &__price {}
 }
 
-.hero__wrap:hover .hero__line {
-    background-color: var(--hover-color);
-}
+
 
 .burger {
     cursor: pointer;
@@ -144,10 +148,34 @@
 }
 
 .price {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 17, 8);
+    padding: 33px 0;
 
-    &__item {}
+    // &__item {}
 
-    &__parag-one {}
+    &__parag-one {
+        font-family: 'JetBrains Mono';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: -2px;
+        margin-bottom: 18px;
+        color: rgba(255, 255, 255, 0.7);
+    }
 
-    &__parag-two {}
+    &__parag-two {
+        font-family: 'Bevan';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.08;
+        letter-spacing: -1px;
+        color: #FFFFFF;
+        text-align: center;
+    }
 }
